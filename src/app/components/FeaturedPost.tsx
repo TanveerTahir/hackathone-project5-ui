@@ -26,10 +26,10 @@ const FeaturedPost =() => {
                 <li>New</li>
                 </ul>
                 <br />
-                <h1 className="text-logocol text-2xl">Loudest à la Madison #1 (L'integral)</h1>
+                <h1 className="text-logocol text-2xl">Loudest à la Madison #1 Lintegral</h1>
                 <br />
                 <p>We focus on ergonomics and meeting 
-                   you where you work. It's only a 
+                   you where you work. Its only a 
                    keystroke away.</p>
                    <br />
                    <ul className="flex justify-between">
@@ -52,10 +52,10 @@ const FeaturedPost =() => {
                 <li>New</li>
                 </ul>
                 <br />
-                <h1 className="text-logocol text-2xl">Loudest à la Madison #1 (L'integral)</h1>
+                <h1 className="text-logocol text-2xl">Loudest à la Madison #1 Lintegral</h1>
                 <br />
                 <p>We focus on ergonomics and meeting 
-                   you where you work. It's only a 
+                   you where you work. Its only a 
                    keystroke away.</p>
                    <br />
                    <ul className="flex justify-between">
@@ -76,10 +76,10 @@ const FeaturedPost =() => {
                 <li>New</li>
                 </ul>
                 <br />
-                <h1 className="text-logocol text-2xl">Loudest à la Madison #1 (L'integral)</h1>
+                <h1 className="text-logocol text-2xl">Loudest à la Madison #1 Lintegral</h1>
                 <br />
                 <p>We focus on ergonomics and meeting 
-                   you where you work. It's only a 
+                   you where you work. Its only a 
                    keystroke away.</p>
                    <br />
                    <ul className="flex justify-between">

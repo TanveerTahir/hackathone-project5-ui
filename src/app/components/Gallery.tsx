@@ -7,7 +7,7 @@ const Gallery =() => {
     return (
         <div>
         <div className=" py-20 text-center">
-        <h1 className="text-topnav text-2xl font-bold">EDITOR'S PICK </h1>
+        <h1 className="text-topnav text-2xl font-bold">EDITORS PICK </h1>
         <p className="text-secnavitemcol">Problems trying to resolve the conflict between</p>
         </div>
 
