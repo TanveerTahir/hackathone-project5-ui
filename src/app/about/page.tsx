@@ -1,10 +1,3 @@
-// import { FaGreaterThan } from "react-icons/fa6";
-// import { BsListCheck } from "react-icons/bs";
-// import { HiViewGrid } from "react-icons/hi";
-// import { BsTelephone, } from "react-icons/bs";
-// import { FaSearch, FaShoppingCart } from "react-icons/fa";
-// import { FaRegEnvelope, FaChild } from "react-icons/fa";
-// import { BiMenuAltRight } from "react-icons/bi";
 import { HiArrowSmallRight } from "react-icons/hi2";
 import { FaInstagram, FaFacebook, FaYoutube, FaTwitter, FaRegHeart } from "react-icons/fa6"
 import Image from "next/image";
@@ -194,9 +187,9 @@ export default function About () {
 
                                 <div className="w-[438px] h-[238px] space-y-8">
                                 <p className="text-white text-sm">WORK WITH US</p>
-                            <h2 className="text-white text-4xl">Now Let's grow yours</h2>
+                            <h2 className="text-white text-4xl">Now Let&apos;s grow yours</h2>
                             <p className="text-white text-sm">The gradual accumulation of information about atomic and
-                     <br />   small-scale behavior during the first quarter of the 20th</p>
+                     <br />   small&lsquo;scale behavior during the first quarter of the 20th</p>
                             <button className="border-white border-solid border-2 rounded-md text-xs py-2 px-5 mt-5">Button</button>
 
                                 </div>

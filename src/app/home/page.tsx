@@ -1,10 +1,3 @@
-import Link from "next/link";
-import { BsTelephone, } from "react-icons/bs";
-import { FaInstagram, FaFacebook, FaYoutube, FaTwitter, FaRegHeart } from "react-icons/fa6"
-import { FaSearch, FaShoppingCart } from "react-icons/fa";
-import { FaRegEnvelope, FaChild } from "react-icons/fa";
-import { Montserrat } from "next/font/google";
-import { BiMenuAltRight } from "react-icons/bi";
 import React from "react";
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
