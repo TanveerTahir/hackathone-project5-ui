@@ -2,7 +2,7 @@ import { FaInstagram, FaFacebook, FaYoutube, FaTwitter, FaRegHeart } from "react
 
 const Footer = () => {
     return (
-        <div>
+        <div className="h[488px]">
             <div className="bg-footbar flex items-center justify-around space-x-96 py-10">
                 <h1 className="text-logocol font-bold">Bandage</h1>
                 <div className="flex items-center gap-4 text-primery">
@@ -12,7 +12,7 @@ const Footer = () => {
 
                 </div>
                 </div>
-            <div className="flex justify-center gap-20 leading-8 text-xs py-5 my-10"> 
+            <div className="h-[272px] flex justify-center gap-20 leading-8 text-xs py-5 my-10"> 
 
             <div className=""></div>
                 <ul>
@@ -61,7 +61,7 @@ const Footer = () => {
                 </div>
 
             </div>
-            <div className="bg-footbar text-secnavitemcol text-sm py-5 pl-44"><p>Made With Love By Finland All Rights Reserverd replicate-TanveerTahir</p></div>
+            <div className="bg-footbar h-[74px] text-secnavitemcol text-sm py-5 pl-44"><p>Made With Love By Finland All Rights Reserverd replicate-TanveerTahir</p></div>
         </div>
 
     )
