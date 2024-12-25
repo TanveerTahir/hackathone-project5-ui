@@ -20,14 +20,14 @@ const Hero = () => {
             height={716}
             />
             </div>
-            <div className="relative  flex w-full place-items-center place-content-center justify-center items-center justify-items-center p-20 ">
-            <div className="flexbox text-white items-center justify-center place-items-left place-content-center leading-relaxed p-20">
+            <div className="relative  flex w-full items-center pl-20 pt-20 ">
+            <div className="md:flex-col text-white  justify-centr  place-content-center leading-relaxed pl-20">
 
 <p className="font-bold text-1xl">SUMMER 2020</p> <br />
 <h1 className="text-6xl">NEW COLLECTION</h1><br />
 <p className="text-2xl">We know how large objects will act, <br />
     but things on a small scale.</p> <br />
-    <button className="bg-snbtn text-2xl py-3 px-10 rounded-md ">SHOP NOW</button>
+    <button className="bg-snbtn text-2xl py-3 px-10 rounded-md hover:bg-white hover:text-snbtn">SHOP NOW</button>
             </div>
             
             </div>
