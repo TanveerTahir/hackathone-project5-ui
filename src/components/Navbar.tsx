@@ -33,7 +33,7 @@ const Navbar = () => {
         </div>
 
         {/* navbar white */}
-        <div className=" bg-white flex justify-around h-[78px] py-5 md:flex-row md:justify-between items-center">
+        <div className=" bg-white flex justify-around h-[58px] py-5 md:flex-row md:justify-between items-center">
             <h1 className={`${montserra.className}font-bold text-2xl pl-5  text-topnav font-`}>Bandage</h1>
             <ul className="hidden md:flex md:flex-row md:justify-between md:items-center font-bold gap-5  text-topnav  hover:font-medium">
                 
