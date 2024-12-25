@@ -17,7 +17,7 @@ const montserra = Montserrat({
 const Navbar = () => {
     return (
         <div className={montserra.className}>
-            {/* top navbar */}
+            {/* annoucement bar */}
         <div className={`${montserra.className} h-[58px] md:flex flex-row py-3 justify-between items-center bg-topnav text-white hidden`}>
         <p className="md:flex items-center gap-2 pl-5 hidden">
          <BsTelephone />(225) 555-0118 
@@ -32,7 +32,7 @@ const Navbar = () => {
         </p>
         </div>
 
-        {/* second navbar white */}
+        {/* navbar white */}
         <div className=" bg-white flex justify-around h-[78px] py-5 md:flex-row md:justify-between items-center">
             <h1 className={`${montserra.className}font-bold text-2xl pl-5  text-topnav font-`}>Bandage</h1>
             <ul className="hidden md:flex md:flex-row md:justify-between md:items-center font-bold gap-5  text-topnav  hover:font-medium">
@@ -42,7 +42,7 @@ const Navbar = () => {
                 <li><Link href="/productlist">Product List</Link></li>
                 <li><Link href="/product">Product</Link></li>
                 <li><Link href="/about">About</Link></li>
-                <li><Link href="/pricing">Pricing</Link></li>
+                <li><Link href="/pricing">Pricing</Link></li> 
                 <li><Link href="/team">Team</Link></li>
                 <li><Link href="/contact">Contact</Link></li>
             </ul>

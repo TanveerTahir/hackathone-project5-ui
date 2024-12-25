@@ -11,7 +11,7 @@ const Hero = () => {
     return (
         <div className="{montserrat.className}">
 
-            <div className="relative">
+            <div className="absolute w-full">
             <Image 
             src={"/images/shop-hero-1-product-slide-1.jpg"}
             alt="carousel-item"
@@ -20,8 +20,8 @@ const Hero = () => {
             height={716}
             />
             </div>
-            <div className="absolute inset-0 flex w-full place-items-center place-content-center justify-center items-center justify-items-center p-20 ">
-            <div className="absolute inset-0 flexbox text-white items-center justify-center place-items-left place-content-center leading-relaxed p-20">
+            <div className="relative  flex w-full place-items-center place-content-center justify-center items-center justify-items-center p-20 ">
+            <div className="flexbox text-white items-center justify-center place-items-left place-content-center leading-relaxed p-20">
 
 <p className="font-bold text-1xl">SUMMER 2020</p> <br />
 <h1 className="text-6xl">NEW COLLECTION</h1><br />
