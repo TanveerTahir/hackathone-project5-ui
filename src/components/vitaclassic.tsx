@@ -2,7 +2,7 @@ import Image from "next/image";
 
 
 
-export default function AdSection ()  {
+export default function VitaClassic ()  {
     return(
         <div className="relative bg-adsection w-[1350px] sm:w-full sm:hscreen h-[670px]">
     

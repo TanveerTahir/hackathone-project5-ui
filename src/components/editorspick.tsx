@@ -1,11 +1,13 @@
 import React from "react";
 import Image from "next/image";
 
-const Gallery = () => {
+const EditorsPick = () => {
   return (
     <>
-      <div className="w-full h-[1652px] pt-100">
-        <div className="flex justify-center items-center w-[692px] h-[102px]">
+      <div className="w-full h-[770px] mt=20">
+        <div className="w-full flex justify-center items-center">
+
+        <div className="flex justify-center items-center w-[692px] h-[102px] pt-20 pb-12">
           <div className="pb-80 pt-80 text-center">
             <h1 className="text-topnav text-2xl font-bold">EDITORS PICK </h1>
             <p className="text-secnavitemcol">
@@ -13,8 +15,10 @@ const Gallery = () => {
             </p>
           </div>
         </div>
+        </div>
+        
 
-        <div className="flex justify-center">
+        <div className="flex justify-center mt-20 mb-20">
           {/* Gallery section */}
           <div className="flex gap-4">
             {/* 1st image */}
@@ -39,7 +43,7 @@ const Gallery = () => {
                 src={"/images/filter (1).png"}
                 alt="filter2"
                 width={240}
-                height={410}
+                height={500}
               />
             </div>
 
@@ -80,4 +84,4 @@ const Gallery = () => {
   );
 };
 
-export default Gallery;
+export default EditorsPick;

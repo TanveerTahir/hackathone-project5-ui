@@ -1,7 +1,7 @@
 import Image from "next/image";
 
 
-const AdSection2 = () => {
+const NeuralUniverse = () => {
     return (
         <div>
             <div className="bg-white w-full h-full flex flex-row-reverse justify-center items-center ">
@@ -19,4 +19,4 @@ const AdSection2 = () => {
     )
 }
 
-export default AdSection2
+export default NeuralUniverse

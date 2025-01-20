@@ -1,3 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.card-hover{
+     background-color: #252b42; text-emphasis-color: white; 
+     .button {
+        background: #23a6f0;
+        color: white;
+        .h3{
+            color: white;
+        }
+     }
+
+}

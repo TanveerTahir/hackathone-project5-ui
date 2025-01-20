@@ -1,7 +1,7 @@
 import Image from "next/image";
 
 
-const FeatueredProduct = () => {
+const BestSeller = () => {
     return(
         <div>
             <div className="bg-white w-full my-20">
@@ -98,4 +98,4 @@ const FeatueredProduct = () => {
     )
 }
 
-export default FeatueredProduct;
+export default BestSeller;
