@@ -52,7 +52,7 @@ const ProductList = () => {
                 <li><Link href="/contact">Contact</Link></li>
             </ul>
             <div className="text-gray-400 flex md:text-primery md:flex justify-center items-center gap-2">
-                <p className="hidden md:flex gap-2 font-bold"> <FaChild />Login/Register</p>
+                <p className="hidden md:flex gap-2 font-bold"> <Link href={'/login'} className="md:flex "><FaChild />Login/Register</Link></p>
                 <div className="flex justify-center items-center gap-2 pr-5">
                 <FaSearch />
                 <FaShoppingCart /><p className="hidden">1</p>

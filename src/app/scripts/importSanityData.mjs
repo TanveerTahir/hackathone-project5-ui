@@ -65,7 +65,8 @@ async function uploadProduct(product) {
 
 async function importProducts() {
   try {
-    const response = await fetch('https://template6-six.vercel.app/api/products');
+    const response = await Delete('https://template6-six.vercel.app/api/products');
+    method:Post
     
     if (!response.ok) {
       throw new Error(`HTTP error! Status: ${response.status}`);
@@ -78,6 +79,22 @@ async function importProducts() {
     }
   } catch (error) {
     console.error('Error fetching products:', error);
+
+
+
+    let dataFetched = false;
+
+async function fetchData() {
+    if (!dataFetched) {
+        const response = await fetch('https://template6-six.vercel.app/api/products');
+        const data = await response.json();
+        // Process your data
+        dataFetched = true;
+    }
+}
+
+fetchData();
+
   }
 }
 

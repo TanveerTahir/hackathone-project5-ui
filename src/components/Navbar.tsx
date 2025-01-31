@@ -6,7 +6,7 @@ import { FaRegEnvelope, FaChild } from "react-icons/fa";
 import { Montserrat } from "next/font/google";
 import { BiMenuAltRight } from "react-icons/bi";
 import React from "react";
-import loginForm from "./loginform";
+import logInForm from "@/app/loginform/page"; 
 
 
 const montserra = Montserrat({
@@ -48,7 +48,7 @@ const Navbar = () => {
                 <li><Link href="/contact">Contact</Link></li>
             </ul>
             <div className="text-gray-400 flex md:text-primery md:flex justify-center items-center gap-2">
-                <Link href={'/loginForm'} className="hover:scale-105 transition-transform ease-in-out"><p className="hidden md:flex gap-2 font-bold"> <FaChild />Login/Register</p></Link>
+                <Link href='/loginform' className="hover:scale-105 transition-transform ease-in-out hover:transform "><p className="hidden md:flex gap-2 font-bold"> <FaChild />Login/Register</p></Link>
                 <div className="flex justify-center items-center gap-2 pr-5">
                 <FaSearch />
                 <FaShoppingCart /><p className="hidden">1</p>

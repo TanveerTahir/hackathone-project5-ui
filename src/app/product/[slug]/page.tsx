@@ -16,7 +16,7 @@ interface ProductPageProps {
 
 async function getProduct(slug : string): Promise<Product> {
     return client.fetch(
-        groq`*[_type =="product" && alug.current == $slug][0]{
+        groq`*[_type =="product" && alug.current == $slug] [0] {
         _id,
         title
         _type

@@ -6,7 +6,6 @@ import Image from "next/image";
 import { useEffect, useState } from "react";
 import { urlFor } from "@/sanity/lib/image";
 import Link from "next/link";
-import { ImageResponse } from "next/server";
 
 const BestSeller = () => {
   const [product, setProduct] = useState<Product[]>([]);
@@ -55,6 +54,6 @@ const BestSeller = () => {
       </div>
     </div>
   );
-};
+}
 
 export default BestSeller;
