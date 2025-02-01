@@ -12,9 +12,9 @@ export const product = defineType({
             type: "string"
         },
         {
-            name: "slug",
-            title: "slug",
+            name : "slug",
             type : "slug",
+            title : "Slug",
             options : {
                 source: "title"
             },
@@ -42,6 +42,11 @@ export const product = defineType({
             type: "array",
             title: "Tags",
             of: [{ type: "string" }]
+        },
+        {
+            name: "invventory",
+            title: "Inventory",
+            type: "number",
         },
         {
             name:"dicountPercentage",
