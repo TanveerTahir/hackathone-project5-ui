@@ -56,9 +56,10 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <ClerkProvider>
-      <html lang="en">
+    <html>
+    <link rel="preload" href="/path/to/style.css" as="style" />
         <body>
+        <ClerkProvider>
           <SignedOut>
             <SignInButton />
           </SignedOut>
@@ -66,8 +67,8 @@ export default function RootLayout({
             <UserButton />
           </SignedIn>
           {children}
+    </ClerkProvider>
         </body>
       </html>
-    </ClerkProvider>
   )
 }

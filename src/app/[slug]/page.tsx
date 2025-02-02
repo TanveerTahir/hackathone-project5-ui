@@ -1,3 +1,4 @@
+
 import { client } from "@/sanity/lib/client";
 import { urlFor } from "@/sanity/lib/image";
 import { Product } from "@/types/products";
@@ -9,21 +10,20 @@ import { Image } from "next-sanity/image";
 
 
 
-
 interface ProductPageProps {
     params: Promise<{slug : string}>
 }
 
 async function getProduct(slug : string): Promise<Product> {
     return client.fetch(
-        groq`*[_type =="product" && alug.current == $slug] [0] {
+        groq`*[_type =="product" && slug.current == $slug] [0] {
         _id,
-        title
-        _type
-        productImage
-        price
-        tags
-        discountPercentage
+        title,
+        _type,
+        productImage,
+        price,
+        tags,
+        discountPercentage,
         isNew
         
         }`, {slug}
@@ -36,9 +36,11 @@ export default async function ProductPage({params} : ProductPageProps) {
     const product = await getProduct(slug)
 
 
+     
+
     return (
         <div className="max-w-7xl mx-auto px-4">
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
+            <div className="grid grid-cols-1 justify-self-center md:grid-cols-2 lg:grid-cols-3 gap-12">
                 <div className="aspect-square">
                     {product.productImage && (
                         <Image
@@ -55,7 +57,11 @@ export default async function ProductPage({params} : ProductPageProps) {
                 <h1 className="text-4xl font-bold">
                 {product.title}
                 </h1>
-                <p className="text-2xl dont-sans">{product.price}</p>
+                <p className="text-2xl font-sans">{product.price}</p>
+                <p className="text-2xl font-sans">{product.description}</p>
+
+
+
                 </div>
             </div>
         </div>

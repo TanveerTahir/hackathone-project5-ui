@@ -2,8 +2,8 @@ import React from "react";
 import { useForm } from "react-hook-form";
 
 interface FormData {
-    name: string;
-    email: string;
+    name: "string",
+    email: "string",
 }
 
 const LogInForm = () => {

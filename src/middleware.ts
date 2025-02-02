@@ -1,4 +1,4 @@
-import { SignedOut, SignIn } from "@clerk/nextjs";
+
 import { clerkMiddleware } from "@clerk/nextjs/server";
 
 export default clerkMiddleware();
