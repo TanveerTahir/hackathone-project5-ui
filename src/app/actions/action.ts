@@ -1,4 +1,3 @@
-import { product } from "@/sanity/schemaTypes/product";
 import { Product } from "@/types/products";
 
 
@@ -29,7 +28,8 @@ export const updateCartQuantity = (productId : string , quantity : number) => {
     const productIndex = cart.findIndex(item => item.title === productId)
 
     if(productIndex > -1) {
-        cart[productIndex].inventory = quantity
+        cart[productIndex].inventory = quantity;
+        localStorage.setItem('cart', JSON.stringify(cart))
     }
 }
 
