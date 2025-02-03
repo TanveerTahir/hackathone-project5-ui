@@ -1,4 +1,5 @@
 
+import Rating from "@/components/rating";
 import { client } from "@/sanity/lib/client";
 import { urlFor } from "@/sanity/lib/image";
 import { Product } from "@/types/products";
@@ -20,12 +21,13 @@ async function getProduct(slug : string): Promise<Product> {
         _id,
         title,
         _type,
-        productImage,
+        "imageUrl" :productImage.asset -> url,
         price,
         tags,
         discountPercentage,
+        inventory,
+        description,
         isNew
-        
         }`, {slug}
     );
 }
@@ -39,32 +41,58 @@ export default async function ProductPage({params} : ProductPageProps) {
      
 
     return (
-        <div className="max-w-7xl mx-auto px-4">
-            <div className="grid grid-cols-1 justify-self-center md:grid-cols-2 lg:grid-cols-3 gap-12">
-                <div className="aspect-square">
-                    {product.productImage && (
-                        <Image
-                        src={urlFor(product.productImage).url()}
-                            alt={product.title}
-                            width={500}
-                            height={500}
-                            className="rounded-lg shadow-md"
-                            />)}
-                        
-                      
-                </div>
-                <div className="flex flex-col gap-8">
-                <h1 className="text-4xl font-bold">
-                {product.title}
-                </h1>
-                <p className="text-2xl font-sans">{product.price}</p>
-                <p className="text-2xl font-sans">{product.description}</p>
+        <div className="max-w-7xl mx-auto px-4 py-12">
+  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+    {/* Product Image Section */}
+    <div className="aspect-square  rounded-lg shadow-2xl hover:shadow-xl transition-shadow duration-300">
+      {product.productImage && (
+        <Image
+          src={urlFor(product.productImage).url()}
+          alt={product.title}
+          width={500}
+          height={500}
+          className="w-full h-full object-cover transform hover:scale-105 transition-transform duration-300"
+        />
+      )}
+      
+    </div>
+    
+    
 
+    {/* Product Details Section */}
+    <div className="flex flex-col gap-6 p-6 bg-white rounded-lg shadow-lg md:col-span-2 lg:col-span-1">
+      {/* Product Title */}
+      <h1 className="text-4xl font-bold text-gray-900 hover:text-indigo-600 transition-colors duration-300">
+        {product.title}
+      </h1>
+      
 
+      <Rating />
 
-                </div>
-            </div>
-        </div>
+      {/* Product Price */}
+      <p className="text-2xl font-semibold text-gray-800">
+        ${product.price}
+        {product.isNew}
+        {product.discountPercentage}
+      </p>
+      <div className="text-secnavitemcol font-thin underline">
+    {product.tags}
+
+    </div>
+
+      {/* Product Description */}
+      <p className="text-sm text-gray-600 leading-relaxed">
+        {product.description}
+      </p>
+
+      {/* Call-to-Action Button */}
+      <button className="mt-4 px-6 py-3 bg-indigo-600 text-white font-semibold rounded-lg hover:bg-indigo-700 transition-colors duration-300">
+        Add to Cart
+      </button>
+    </div>
+  </div>
+</div>
+
     )
 }
 

@@ -5,7 +5,7 @@ import { FaSearch, FaShoppingCart } from "react-icons/fa";
 import { FaRegEnvelope, FaChild } from "react-icons/fa";
 import { Montserrat } from "next/font/google";
 import { BiMenuAltRight } from "react-icons/bi";
-import React from "react";
+// import React from "react";
 // import  LogInForm  from "../app/loginform/page";
 
 

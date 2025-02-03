@@ -42,13 +42,7 @@ export default function RootLayout({
 
 */
 
-import {
-  ClerkProvider,
-  SignInButton,
-  SignedIn,
-  SignedOut,
-  UserButton
-} from '@clerk/nextjs'
+
 import './globals.css'
 export default function RootLayout({
   children,
@@ -56,19 +50,13 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
+       
     <html>
-    <link rel="preload" href="/path/to/style.css" as="style" />
+    {/* <link rel="preload" href="/path/to/style.css" as="style" /> */}
         <body>
-        <ClerkProvider>
-          <SignedOut>
-            <SignInButton />
-          </SignedOut>
-          <SignedIn>
-            <UserButton />
-          </SignedIn>
-          {children}
-    </ClerkProvider>
+               {children}
         </body>
       </html>
+    
   )
 }
