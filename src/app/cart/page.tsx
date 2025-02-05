@@ -1,10 +1,11 @@
-"use client";
+"use client"
 import { Product } from "@/types/products";
 import React, { useEffect, useState } from "react";
 import { getCartItems, removeFromCart, updateCartQuantity } from "../actions/action";
 import Swal from "sweetalert2";
 import { urlFor } from "@/sanity/lib/image";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 
 const CartPage = () => {
   const [cartItems, setCartItems] = useState<Product[]>([]);
@@ -50,6 +51,8 @@ const CartPage = () => {
     return cartItems.reduce((total, item) => total + item.price * item.inventory, 0);
   };
 
+  const router = useRouter();
+
   const handleProceed = () => {
     Swal.fire({
       title: "Proceed to Checkout?",
@@ -61,9 +64,11 @@ const CartPage = () => {
       confirmButtonText: "Yes, proceed!",
     }).then((result) => {
       if (result.isConfirmed) {
-        Swal.fire("Success", "Your order has been successfully Proccessed", "success");
+        Swal.fire("Success", "Your order has been successfully Proccessed", "success")
+
+        router.push('/checkout')
         setCartItems([]);
-      }
+      };
     });
   };
 
