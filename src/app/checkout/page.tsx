@@ -201,7 +201,7 @@ const CheckOut = () => {
                   onChange={handleInputChange}
                   className="w-full h-12 rounded-lg border"
                 />
-                {formErrors.address && (
+                {formErrors.email && (
                   <p className="text-red-500 text-xs font-bold">
                     Email is Required
                   </p>
